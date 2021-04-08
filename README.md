@@ -13,7 +13,7 @@ You should also change the description in `.gat.json` to include your webpage UR
 
 Included examples are:
 
-- Request testing each night on the workdays(so you have the results when you start your work next day)
-- Request testing over the weekend
-- Request testing when new pull request is created
-- Request testing when new release is published
+- [Request testing each night on the workdays(so you have the results when you start your work next day)](https://github.com/GlobalAppTesting/gat-actions-examples/blob/main/workflows/nightly-tests.yml)
+- [Request testing over the weekend](https://github.com/GlobalAppTesting/gat-actions-examples/blob/main/workflows/tests-on-the-weekend.yml)
+- [Request testing when new pull request is created](https://github.com/GlobalAppTesting/gat-actions-examples/blob/main/workflows/tests-on-new-pull-request.yml)
+- [Request testing when new release is published](https://github.com/GlobalAppTesting/gat-actions-examples/blob/main/workflows/tests-on-the-release.yml)
