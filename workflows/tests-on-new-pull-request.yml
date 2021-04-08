@@ -1,0 +1,13 @@
+name: GlobalAppTesting
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  test-with-gat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test with GAT
+        uses: GlobalAppTesting/gat-actions-request-test@v1
+        with:
+          api_key: ${{ secrets.GAT_API_KEY }}
