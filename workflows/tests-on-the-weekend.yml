@@ -11,3 +11,4 @@ jobs:
         uses: GlobalAppTesting/gat-actions-request-test@v1
         with:
           api_key: ${{ secrets.GAT_API_KEY }}
+          access_token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
