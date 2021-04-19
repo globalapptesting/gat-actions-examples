@@ -7,7 +7,7 @@ Test it yourself:
 - sign up for your API KEY [here](https://go.globalapptesting.com/speak-to-us)
 - set your API key as a `GAT_API_KEY` secret in your repo
 
-You should also change the description in `.gat.json` to include your webpage URL. Otherwise our testers will be checking [if the ship is still stuck](https://istheshipstillstuck.com).
+You should also change the description in `.gat.json` to include your webpage URL. Otherwise our testers will be checking [if Cyberpunk's website is any better than the game is.](https://www.cyberpunk.net).
 
 ---
 
