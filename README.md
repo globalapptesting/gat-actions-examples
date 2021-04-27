@@ -4,7 +4,7 @@ This repository contains few examples on how to use [our test request action](ht
 
 Test it yourself:
 - fork this repo
-- sign up for your API KEY [here](https://go.globalapptesting.com/speak-to-us)
+- sign up for your API KEY [here](https://go.globalapptesting.com/compare?hs_preview=rCyvmukc-45752713128)
 - set your API key as a `GAT_API_KEY` secret in your repo
 
 You should also change the description in `.gat.json` to include your webpage URL. Otherwise our testers will be checking [if Cyberpunk's website is any better than the game is.](https://www.cyberpunk.net).
