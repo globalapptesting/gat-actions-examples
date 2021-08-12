@@ -11,26 +11,29 @@ jobs:
       # required to get .gat.json file from your repository
       - uses: actions/checkout@v2
       - name: Test with GAT (android)
-        uses: GlobalAppTesting/gat-actions-request-test@v2
+        uses: GlobalAppTesting/gat-actions-request-test@v2.1
         if: ${{ contains(github.event.pull_request.title, 'android') && !contains(github.event.pull_request.title, 'ios') }}
         with:
           api_key: ${{ secrets.GAT_API_KEY }}
           access_token: ${{ secrets.GAT_GH_ACCESS_TOKEN }}
+          application_url: https://globalapptesting.com
           wait_for_finished_testing: false
           issue_prefix: android
       - name: Test with GAT (iOS)
-        uses: GlobalAppTesting/gat-actions-request-test@v2
+        uses: GlobalAppTesting/gat-actions-request-test@v2.1
         if: ${{ contains(github.event.pull_request.title, 'ios') && !contains(github.event.pull_request.title, 'android') }}
         with:
           api_key: ${{ secrets.GAT_API_KEY }}
           access_token: ${{ secrets.GAT_GH_ACCESS_TOKEN }}
+          application_url: https://globalapptesting.com
           wait_for_finished_testing: false
           issue_prefix: iOS
       - name: Test with GAT (API)
-        uses: GlobalAppTesting/gat-actions-request-test@v2
+        uses: GlobalAppTesting/gat-actions-request-test@v2.1
         if: ${{ !contains(github.event.pull_request.title, 'ios') && !contains(github.event.pull_request.title, 'android') }}
         with:
           api_key: ${{ secrets.GAT_API_KEY }}
           access_token: ${{ secrets.GAT_GH_ACCESS_TOKEN }}
+          application_url: https://globalapptesting.com
           wait_for_finished_testing: false
           issue_prefix: API

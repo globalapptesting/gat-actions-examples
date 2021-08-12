@@ -7,7 +7,7 @@ Test it yourself:
 - sign up for your API KEY [here](https://go.globalapptesting.com/early-access-exploratory-testing-test-execution)
 - set your API key as a `GAT_API_KEY` secret in your repo
 
-You should also change the description in `.gat.json` to include your webpage URL. Otherwise our testers will be checking [if Cyberpunk's website is any better than the game is.](https://www.cyberpunk.net).
+You should also change the `application_url` in the workflow definition(`.github/workflows/main.yml`) to include your webpage URL and change the company description in the `description` field in `.gat.json`. Otherwise our testers will be checking [our webpage](https://www.globalapptesting.com).
 
 ---
 
